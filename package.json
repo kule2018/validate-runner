@@ -1,5 +1,5 @@
 {
-    "name": "@validate/validate-runner",
+    "name": "validate-runner",
     "version": "1.0.2",
     "publisher": "XueYou",
     "description": "验证执行器",

@@ -7,17 +7,13 @@
 -   `ValidateRunnerAll` 并行验证执行器, 所有验证并行执行, 其中有一个验证错误则错误
 -   `ValidateRunnerAny` 顺序任意验证执行器, 验证函数一个接一个执行, 遇到任意一个验证成功则成功, 全部失败则失败
 
-依赖:
-
--   `@validate/validate-provider`
-
 ## Install And Usega
 
 Using Browser:
 
 ```html
-<script src="./validate-provider.js"></script>
-<script src="./validate-runner.js"></script>
+<script src="validate-provider.js"></script>
+<script src="./dist/index.lib.js"></script>
 <script>
     var provider = new ValidateProvider();
 
@@ -46,13 +42,12 @@ Using Browser:
 Or Using npm:
 
 ```sh
-npm install --save @validate/validate-provider
-npm install --save @validate/validate-runner
+npm install --save validate-provider validate-runner
 ```
 
 ```js
-import { ValidateProvider } from "@validate/validate-provider";
-import { ValidateRunnerElement, ValidateRunnerAll } from "@validate/validate-provider";
+import { ValidateProvider } from "validate-provider";
+import { ValidateRunnerElement, ValidateRunnerAll } from "validate-provider";
 
 var provider = new ValidateProvider();
 
