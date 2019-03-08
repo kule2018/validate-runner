@@ -2,16 +2,18 @@
     "compilerOptions": {
         "baseUrl": "./",
         "outDir": "es",
-        "module": "esnext",
+        "module": "es6",
+        "target": "esnext",
         "declaration": true,
         "skipLibCheck": true,
+        "sourceMap": true,
         "moduleResolution": "node",
-        "target": "esnext",
-        "esModuleInterop": true,
         "lib": ["esnext", "dom"],
         "paths": {
             "@/*": ["src/*"]
-        }
+        },
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true
     },
-    "include": ["src"]
+    "include": ["src", "node_modules/validate-provider/es"]
 }

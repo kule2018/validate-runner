@@ -1,5 +1,5 @@
 import { ValidateRunner, createInvalidError } from "./validate-runner";
-import { ValidateProvider, IMethodRegister } from "@validate/validate-provider";
+import { ValidateProvider, IMethodRegister } from "validate-provider/es";
 
 /**
  * 任意验证执行器

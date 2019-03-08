@@ -1,4 +1,4 @@
-import { ValidateProvider, IMethodRegister } from "@validate/validate-provider/es";
+import { ValidateProvider, IMethodRegister } from "validate-provider/es";
 
 /**
  * 验证执行描述对象

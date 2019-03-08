@@ -8,7 +8,7 @@ describe("any-runner", () => {
      */
     test("any-pass", async () => {
         const allRunner = new ValidateRunnerAny(provider);
-        const validRule = {
+        const validRule: any = {
             PhoneNo: null,
             IsEmail: null
         };
@@ -30,7 +30,7 @@ describe("any-runner", () => {
      */
     test("all-fail", async () => {
         const allRunner = new ValidateRunnerAny(provider);
-        const validRule = {
+        const validRule: any = {
             PhoneNo: null,
             IsEmail: null
         };
@@ -50,7 +50,7 @@ describe("any-runner", () => {
      */
     test("invalid-validaMethod", async () => {
         const allRunner = new ValidateRunnerAny(provider);
-        const validRule = {
+        const validRule: any = {
             PhoneNo: null,
             IsEmailxxx: null,
             IsEmail: null

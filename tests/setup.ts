@@ -1,8 +1,8 @@
-import * as methods from "@validate/validate-methods";
-import { ValidateProvider } from "@validate/validate-provider";
+import * as methods from "validate-methods/es";
+import { ValidateProvider } from "validate-provider/es";
 import { ValidateRunnerElement } from "../src/validate-runner";
 
-export const errMsg = {
+export const errMsg: any = {
     // 通用验证===
     Required: "必填",
     MinLength: "长度应小于{0}",
@@ -51,7 +51,7 @@ export function createValidateRunnerElements(map: any, value: any) {
 
 beforeAll(() => {
     for (let name in methods) {
-        provider.add(name, methods[name], errMsg[name] || defaultErrMsg);
+        provider.add(name, (methods as any)[name], errMsg[name] || defaultErrMsg);
     }
 
     return Promise.resolve();

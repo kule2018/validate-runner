@@ -13,7 +13,7 @@ Using Browser:
 
 ```html
 <script src="validate-provider.js"></script>
-<script src="./dist/index.lib.js"></script>
+<script src="./dist/index.js"></script>
 <script>
     var provider = new ValidateProvider();
 
@@ -46,8 +46,8 @@ npm install --save validate-provider validate-runner
 ```
 
 ```js
-import { ValidateProvider } from "validate-provider";
-import { ValidateRunnerElement, ValidateRunnerAll } from "validate-provider";
+import { ValidateProvider } from "validate-provider/es";
+import { ValidateRunnerElement, ValidateRunnerAll } from "validate-provider/es";
 
 var provider = new ValidateProvider();
 

@@ -7,7 +7,7 @@ describe("all-runner", () => {
      */
     test("all-pass", async () => {
         const allRunner = new ValidateRunnerAll(provider);
-        const validRule = {
+        const validRule: any = {
             Required: null,
             IsEmail: null,
             RangeLength: [5, 19]
@@ -31,7 +31,7 @@ describe("all-runner", () => {
      */
     test("any-fail", async () => {
         const allRunner = new ValidateRunnerAll(provider);
-        const validRule = {
+        const validRule: any = {
             Required: null,
             IsEmail: null,
             RangeLength: [5, 10]
@@ -55,7 +55,7 @@ describe("all-runner", () => {
      */
     test("invalid-validaMethod", async () => {
         const allRunner = new ValidateRunnerAll(provider);
-        const validRule = {
+        const validRule: any = {
             Required: null,
             IsEmailxxx: null,
             RangeLength: [5, 19]
