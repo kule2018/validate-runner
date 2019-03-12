@@ -30,9 +30,6 @@
         "url": "git+https://github.com/xueyou2000/validate-runner.git"
     },
     "license": "MIT",
-    "publishConfig": {
-        "registry": "http://192.168.1.22:8081/repository/npm-my/"
-    },
     "devDependencies": {
         "@babel/core": "^7.3.4",
         "@babel/preset-env": "^7.3.4",
