@@ -3,10 +3,11 @@
         "baseUrl": "./",
         "outDir": "es",
         "module": "es6",
-        "target": "esnext",
+        "target": "es5",
         "declaration": true,
         "skipLibCheck": true,
         "sourceMap": true,
+        "importHelpers": true,
         "moduleResolution": "node",
         "lib": ["esnext", "dom"],
         "paths": {
@@ -15,5 +16,5 @@
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true
     },
-    "include": ["src", "node_modules/validate-provider/es"]
+    "include": ["src"]
 }

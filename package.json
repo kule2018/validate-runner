@@ -1,10 +1,10 @@
 {
     "name": "validate-runner",
-    "version": "1.0.21",
+    "version": "1.0.22",
     "publisher": "XueYou",
     "description": "验证执行器",
     "typings": "es/index.d.ts",
-    "main": "dist/index.js",
+    "main": "es/index.js",
     "module": "es/index.js",
     "files": [
         "es",
